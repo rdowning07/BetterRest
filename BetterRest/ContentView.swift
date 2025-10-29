@@ -5,6 +5,7 @@
 //  Created by Rob Downing on 10/28/25.
 //
 
+import CoreML
 import SwiftUI
 
 struct ContentView: View {
@@ -21,11 +22,33 @@ struct ContentView: View {
                 
                 DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
                     .labelsHidden()
+                Text("Desired amount of sleep")
+                    .font(.headline)
                 
+                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+                
+                Text("Daily Coffee intake")
+                    .font(.headline)
+                
+                Stepper("\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
                 //more to come
             }
-            .padding()
+            .navigationTitle(Text("Better Rest"))
+            .toolbar {
+                Button("Calculate", action: calculateBedtime)
+            }
         }
+    }
+    func calculateBedtime() {
+        do {
+            let config = MLModelConfiguration()
+            let model = try SleepCalculator(configuration: config)
+            
+            //more code to come
+        } catch {
+            //something went wrong
+        }
+        
     }
 }
 
