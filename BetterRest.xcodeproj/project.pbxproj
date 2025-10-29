@@ -6,18 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		20CA522C2EB1F3AC00BD6C73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA522A2EB1F3AC00BD6C73 /* ContentView.swift */; };
+		20CA522D2EB1F3AC00BD6C73 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 20CA522B2EB1F3AC00BD6C73 /* SleepCalculator.mlmodel */; };
+		20CA522E2EB1F3AC00BD6C73 /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA52292EB1F3AC00BD6C73 /* BetterRestApp.swift */; };
+		20CA52312EB1F3DA00BD6C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CA52302EB1F3DA00BD6C73 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		202B9FD92EB1E80D00C0438B /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20ACEFC72EB1F169006AE6E1 /* BetterRest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BetterRest.xcodeproj; sourceTree = "<group>"; };
+		20CA52292EB1F3AC00BD6C73 /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
+		20CA522A2EB1F3AC00BD6C73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20CA522B2EB1F3AC00BD6C73 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		20CA522F2EB1F3B100BD6C73 /* BetterRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BetterRest-Bridging-Header.h"; sourceTree = "<group>"; };
+		20CA52302EB1F3DA00BD6C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		202B9FDB2EB1E80D00C0438B /* BetterRest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BetterRest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		202B9FD62EB1E80D00C0438B /* Frameworks */ = {
@@ -33,8 +37,12 @@
 		202B9FD02EB1E80D00C0438B = {
 			isa = PBXGroup;
 			children = (
-				202B9FDB2EB1E80D00C0438B /* BetterRest */,
+				20CA52302EB1F3DA00BD6C73 /* Assets.xcassets */,
+				20CA52292EB1F3AC00BD6C73 /* BetterRestApp.swift */,
+				20CA522A2EB1F3AC00BD6C73 /* ContentView.swift */,
+				20CA522B2EB1F3AC00BD6C73 /* SleepCalculator.mlmodel */,
 				202B9FDA2EB1E80D00C0438B /* Products */,
+				20CA522F2EB1F3B100BD6C73 /* BetterRest-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +74,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				202B9FDB2EB1E80D00C0438B /* BetterRest */,
-			);
 			name = BetterRest;
 			packageProductDependencies = (
 			);
@@ -88,6 +93,7 @@
 				TargetAttributes = {
 					202B9FD82EB1E80D00C0438B = {
 						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
 					};
 				};
 			};
@@ -121,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CA52312EB1F3DA00BD6C73 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CA522C2EB1F3AC00BD6C73 /* ContentView.swift in Sources */,
+				20CA522D2EB1F3AC00BD6C73 /* SleepCalculator.mlmodel in Sources */,
+				20CA522E2EB1F3AC00BD6C73 /* BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +271,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -281,6 +292,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BetterRest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -312,6 +326,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BetterRest-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
