@@ -1,4 +1,51 @@
+# === Xcode & macOS ===
 .DS_Store
-xcuserdata
-DerivedData
+*.swp
+*.lock
 *.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+.idea/
+*.moved-aside
+
+# === Swift Package Manager ===
+.build/
+Packages/
+Package.pins
+Package.resolved
+.swiftpm/xcode/package.xcworkspace/
+
+# === CocoaPods (if you ever use them) ===
+Pods/
+*.xcworkspace
+
+# === Carthage ===
+Carthage/Build/
+
+# === Fastlane ===
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# === Swift Playgrounds ===
+timeline.xctimeline
+playground.xcworkspace/
+
+# === Misc / User Specific ===
+*.orig
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+
+# === SPM artifacts ===
+.swiftpm/
+
+# === Preview assets ===
+Preview Content/Preview Assets.xcassets/
+
+# === Local configuration ===
+*.local.*
+
